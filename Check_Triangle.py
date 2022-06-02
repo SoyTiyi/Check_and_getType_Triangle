@@ -20,11 +20,16 @@ def check_triangle(sides):
     a = sides[0]
     b = sides[1]
     c = sides[2]
-
+    print_sides_of_tringle(a,b,c)
     if(a + b > c and b + c > a and a + c > b):
         get_triangle_type(a,b,c)
     else:
         print("Error to get the type of the triangle because is not posible to build a triangle with that sides")
+
+def print_sides_of_tringle(a,b,c):
+    print(a)
+    print(b)
+    print(c)
 
 # Principal Method that execute all the logic of the program
 def main():
